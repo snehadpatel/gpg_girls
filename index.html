@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suicide Rate Prediction</title>
+</head>
+<body>
+    <h1>Predict Suicide Rate Category</h1>
+    <form action="/predict" method="post">
+        <label for="state">State:</label><br>
+        <input type="text" id="state" name="state"><br>
+        <label for="type_code">Type Code:</label><br>
+        <input type="text" id="type_code" name="type_code"><br>
+        <label for="type">Type:</label><br>
+        <input type="text" id="type" name="type"><br>
+        <label for="gender">Gender:</label><br>
+        <input type="text" id="gender" name="gender"><br>
+        <label for="age_group">Age Group:</label><br>
+        <input type="text" id="age_group" name="age_group"><br>
+        <label for="year">Year:</label><br>
+        <input type="number" id="year" name="year"><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    <h2>{{ prediction_text }}</h2>
+</body>
+</html>
